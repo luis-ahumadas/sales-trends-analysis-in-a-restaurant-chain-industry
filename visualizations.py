@@ -26,8 +26,8 @@ class SalesVisualizer:
         )
         
         # Add peak hour highlights
-        fig.add_vrect(x0=11, x1=14, fillcolor="green", opacity=0.2, line_width=0, label="Lunch Peak")
-        fig.add_vrect(x0=17, x1=21, fillcolor="orange", opacity=0.2, line_width=0, label="Dinner Peak")
+        fig.add_vrect(x0=11, x1=14, fillcolor="green", opacity=0.2, line_width=0, label={"text": "Lunch Peak", "textposition": "top left"})
+        fig.add_vrect(x0=17, x1=21, fillcolor="orange", opacity=0.2, line_width=0, label={"text": "Dinner Peak", "textposition": "top left"})
         
         return fig
     
