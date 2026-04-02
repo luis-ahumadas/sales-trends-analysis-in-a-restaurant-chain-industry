@@ -21,7 +21,7 @@ class SalesDataGenerator:
             'location': np.random.choice(self.locations, n_observations, 
                                         p=[0.25, 0.20, 0.15, 0.15, 0.15, 0.10]),
             'hour': np.random.choice(range(24), n_observations,
-                                    p=[0.01]*8 + [0.05]*4 + [0.12]*4 + [0.08]*4 + [0.02]*4),
+                                    p=[0.01]*8 + [0.05]*4 + [0.12]*4 + [0.04]*4 + [0.02]*4),
             'category': np.random.choice(self.menu_categories, n_observations,
                                         p=[0.20, 0.35, 0.25, 0.12, 0.08]),
             'num_customers': np.random.poisson(2.5, n_observations) + 1
